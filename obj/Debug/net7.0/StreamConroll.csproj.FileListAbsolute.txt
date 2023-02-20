@@ -1,0 +1,15 @@
+D:\Codes\StreamConroll\bin\Debug\net7.0\StreamConroll.exe
+D:\Codes\StreamConroll\bin\Debug\net7.0\StreamConroll.deps.json
+D:\Codes\StreamConroll\bin\Debug\net7.0\StreamConroll.runtimeconfig.json
+D:\Codes\StreamConroll\bin\Debug\net7.0\StreamConroll.dll
+D:\Codes\StreamConroll\bin\Debug\net7.0\StreamConroll.pdb
+D:\Codes\StreamConroll\obj\Debug\net7.0\StreamConroll.csproj.AssemblyReference.cache
+D:\Codes\StreamConroll\obj\Debug\net7.0\StreamConroll.GeneratedMSBuildEditorConfig.editorconfig
+D:\Codes\StreamConroll\obj\Debug\net7.0\StreamConroll.AssemblyInfoInputs.cache
+D:\Codes\StreamConroll\obj\Debug\net7.0\StreamConroll.AssemblyInfo.cs
+D:\Codes\StreamConroll\obj\Debug\net7.0\StreamConroll.csproj.CoreCompileInputs.cache
+D:\Codes\StreamConroll\obj\Debug\net7.0\StreamConroll.dll
+D:\Codes\StreamConroll\obj\Debug\net7.0\refint\StreamConroll.dll
+D:\Codes\StreamConroll\obj\Debug\net7.0\StreamConroll.pdb
+D:\Codes\StreamConroll\obj\Debug\net7.0\StreamConroll.genruntimeconfig.cache
+D:\Codes\StreamConroll\obj\Debug\net7.0\ref\StreamConroll.dll
