@@ -16,7 +16,7 @@ public class Program
         Console.WriteLine();
 
         Console.WriteLine("Starting timer...");
-        _timer = new Timer(TimerCallback, null, 0, 1000);
+        _timer = new Timer(TimerCallback, null, 0, 60_000);
 
         Console.ReadLine();
     }
@@ -27,16 +27,16 @@ public class Program
         TimeSpan shift = TimeSpan.Parse("23:59");
         TimeSpan stop = TimeSpan.Parse("02:55");
         TimeSpan now = DateTime.Now.TimeOfDay;
-        now = now.StripMilliseconds();
+        now = now.StripSeconds();
 
         Console.WriteLine($"Now: {now} | Start: {start} | Shift: {shift} | Stop: {stop}");
 
-        if (now == start && !isActive)
+        if (now >= start && !isActive)
         {
             StartLocalStream();
             isActive = true;
         }
-        else if (now == shift && isActive)
+        else if (now >= shift && isActive)
         {
             // Change Media Playback
             ChangeMediaPlayback();
@@ -67,7 +67,7 @@ public class Program
         var altaCast1 = @"D:\altacast\altacastStandalone.exe";
         var altaCast2 = @"D:\altacast2\altacastStandalone.exe";
 
-        CreateAndRunProcess(directory: @"C:\Program Files\VideoLan\VLC", fileName: vlc, args: "https://dwizmanila.radioca.st/stream.mp3");
+        CreateAndRunProcess(directory: @"C:\Program Files\VideoLan\VLC", fileName: vlc, args: "http://149.56.147.197:9079/stream");
         CreateAndRunProcess(directory: @"D:\altacast\", fileName: altaCast1, isShell: true, verb: "runas");
         CreateAndRunProcess(directory: @"D:\altacast2\", fileName: altaCast2, isShell: true, verb: "runas");
     }
